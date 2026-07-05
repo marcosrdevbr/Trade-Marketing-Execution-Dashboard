@@ -1,0 +1,1626 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook locale='en_US' original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Dados_Trade' inline='true' name='federated.1p420u1102w89y1auqqqx0itqqfp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Dados_Trade' name='textscan.0c08ey51wr3syl1bbbd1716qdrts'>
+            <connection class='textscan' directory='C:/Users/Dell/Documents/My Project/Projetos - Tableau/Trade Marketing &amp; Merchandising Performance Insights/Data' filename='Dados_Trade.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0c08ey51wr3syl1bbbd1716qdrts' name='Dados_Trade.csv' table='[Dados_Trade#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=';'>
+            <column datatype='date' name='Data' ordinal='0' />
+            <column datatype='string' name='Loja' ordinal='1' />
+            <column datatype='string' name='Região' ordinal='2' />
+            <column datatype='string' name='Produto' ordinal='3' />
+            <column datatype='string' name='Ação Merchandising' ordinal='4' />
+            <column datatype='integer' name='Investimento R$' ordinal='5' />
+            <column datatype='integer' name='Qtd Vendida SellOut' ordinal='6' />
+            <column datatype='integer' name='Faturamento R$' ordinal='7' />
+            <column datatype='integer' name='Houve Ruptura Auditoria' ordinal='8' />
+            <column datatype='real' name='Share Nossa Marca' ordinal='9' />
+            <column datatype='real' name='Share Concorrente A' ordinal='10' />
+            <column datatype='real' name='Share Concorrente B' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Data]</local-name>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias>Data</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loja</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Loja]</local-name>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias>Loja</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Região</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Região]</local-name>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias>Região</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Produto</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Produto]</local-name>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias>Produto</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ação Merchandising</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ação Merchandising]</local-name>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias>Ação Merchandising</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Investimento R$</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Investimento R$]</local-name>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias>Investimento R$</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Qtd Vendida SellOut</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Qtd Vendida SellOut]</local-name>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias>Qtd Vendida SellOut</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Faturamento R$</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Faturamento R$]</local-name>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias>Faturamento R$</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Houve Ruptura Auditoria</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Houve Ruptura Auditoria]</local-name>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias>Houve Ruptura Auditoria</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share Nossa Marca</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share Nossa Marca]</local-name>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias>Share Nossa Marca</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share Concorrente A</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share Concorrente A]</local-name>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias>Share Concorrente A</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Share Concorrente B</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Share Concorrente B]</local-name>
+            <parent-name>[Dados_Trade.csv]</parent-name>
+            <remote-alias>Share Concorrente B</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Date' datatype='date' name='[Data]' role='dimension' type='ordinal' />
+      <column caption='Revenue ($)' datatype='integer' name='[Faturamento R$]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Houve Ruptura Auditoria]' role='measure' type='quantitative' />
+      <column caption='Investiment ($)' datatype='integer' name='[Investimento R$]' role='measure' type='quantitative' />
+      <column caption='Store' datatype='string' name='[Loja]' role='dimension' type='nominal' />
+      <column caption='Product' datatype='string' name='[Produto]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Qtd Vendida SellOut]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[Região]' role='dimension' type='nominal' />
+      <column caption='Competitor A' datatype='real' name='[Share Concorrente A]' role='measure' type='quantitative' />
+      <column caption='Competitor B' datatype='real' name='[Share Concorrente B]' role='measure' type='quantitative' />
+      <column caption='Our Brand' datatype='real' name='[Share Nossa Marca]' role='measure' type='quantitative' />
+      <column caption='Dados_Trade.csv' datatype='table' name='[__tableau_internal_object_id__].[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Dados_Trade.csv_DC207875C786460890272B0972BAEF4E:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share Concorrente A]' derivation='Avg' name='[avg:Share Concorrente A:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share Concorrente B]' derivation='Avg' name='[avg:Share Concorrente B:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share Nossa Marca]' derivation='Avg' name='[avg:Share Nossa Marca:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Faturamento R$]' derivation='Sum' name='[sum:Faturamento R$:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Houve Ruptura Auditoria]' derivation='Sum' name='[sum:Houve Ruptura Auditoria:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Investimento R$]' derivation='Sum' name='[sum:Investimento R$:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Qtd Vendida SellOut]' derivation='Sum' name='[sum:Qtd Vendida SellOut:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share Concorrente A]' derivation='Sum' name='[sum:Share Concorrente A:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share Concorrente B]' derivation='Sum' name='[sum:Share Concorrente B:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share Nossa Marca]' derivation='Sum' name='[sum:Share Nossa Marca:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Dell/AppData/Local/Temp/TableauTemp/#TableauTemp_06wql0q0n1i4wc0zldkky0l80e8m.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/04/2026 12:06:15 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Data</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Data]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Data</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Dados_Trade.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>181</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Loja</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Loja]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Loja</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Dados_Trade.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Região</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Região]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Região</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Dados_Trade.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Produto</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Produto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Produto</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Dados_Trade.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ação Merchandising</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ação Merchandising]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ação Merchandising</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Dados_Trade.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Investimento R$</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Investimento R$]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Investimento R$</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Dados_Trade.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Qtd Vendida SellOut</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Qtd Vendida SellOut]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Qtd Vendida SellOut</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Dados_Trade.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>128</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Faturamento R$</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Faturamento R$]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Faturamento R$</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Dados_Trade.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>355</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Houve Ruptura Auditoria</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Houve Ruptura Auditoria]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Houve Ruptura Auditoria</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Dados_Trade.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Share Nossa Marca</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Share Nossa Marca]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Share Nossa Marca</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Dados_Trade.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Share Concorrente A</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Share Concorrente A]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Share Concorrente A</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Dados_Trade.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Share Concorrente B</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Share Concorrente B]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Share Concorrente B</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Dados_Trade.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dados_Trade.csv_DC207875C786460890272B0972BAEF4E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[avg:Share Nossa Marca:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Faturamento R$:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Share Nossa Marca:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[avg:Share Concorrente B:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Houve Ruptura Auditoria:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Share Concorrente B:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[__tableau_internal_object_id__].[cnt:Dados_Trade.csv_DC207875C786460890272B0972BAEF4E:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1p420u1102w89y1auqqqx0itqqfp]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Qtd Vendida SellOut:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[avg:Share Concorrente A:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Investimento R$:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Share Concorrente A:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brazil&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Dados_Trade.csv' id='Dados_Trade.csv_DC207875C786460890272B0972BAEF4E'>
+            <properties context=''>
+              <relation connection='textscan.0c08ey51wr3syl1bbbd1716qdrts' name='Dados_Trade.csv' table='[Dados_Trade#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=';'>
+                  <column datatype='date' name='Data' ordinal='0' />
+                  <column datatype='string' name='Loja' ordinal='1' />
+                  <column datatype='string' name='Região' ordinal='2' />
+                  <column datatype='string' name='Produto' ordinal='3' />
+                  <column datatype='string' name='Ação Merchandising' ordinal='4' />
+                  <column datatype='integer' name='Investimento R$' ordinal='5' />
+                  <column datatype='integer' name='Qtd Vendida SellOut' ordinal='6' />
+                  <column datatype='integer' name='Faturamento R$' ordinal='7' />
+                  <column datatype='integer' name='Houve Ruptura Auditoria' ordinal='8' />
+                  <column datatype='real' name='Share Nossa Marca' ordinal='9' />
+                  <column datatype='real' name='Share Concorrente A' ordinal='10' />
+                  <column datatype='real' name='Share Concorrente B' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='KPI - Investment'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' fontname='Arial'>Investment</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dados_Trade' name='federated.1p420u1102w89y1auqqqx0itqqfp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1p420u1102w89y1auqqqx0itqqfp'>
+            <column caption='Investiment ($)' datatype='integer' name='[Investimento R$]' role='measure' type='quantitative' />
+            <column-instance column='[Investimento R$]' derivation='Sum' name='[sum:Investimento R$:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Investimento R$:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Investimento R$:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='15'>&lt;</run>
+                <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='15'>[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Investimento R$:qk]</run>
+                <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5B4B485C-DA9C-4606-9EDF-FA6D059C74A9}' />
+    </worksheet>
+    <worksheet name='KPI - OOS Incidents'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book'>OOS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dados_Trade' name='federated.1p420u1102w89y1auqqqx0itqqfp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1p420u1102w89y1auqqqx0itqqfp'>
+            <column datatype='integer' name='[Houve Ruptura Auditoria]' role='measure' type='quantitative' />
+            <column-instance column='[Houve Ruptura Auditoria]' derivation='Sum' name='[sum:Houve Ruptura Auditoria:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Houve Ruptura Auditoria:qk]' value='N' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Houve Ruptura Auditoria:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='15'>&lt;</run>
+                <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='15'>[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Houve Ruptura Auditoria:qk]</run>
+                <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0F240500-2267-47B2-9DF9-C91DF01C384F}' />
+    </worksheet>
+    <worksheet name='KPI - Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' fontname='Arial'>Revenue</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dados_Trade' name='federated.1p420u1102w89y1auqqqx0itqqfp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1p420u1102w89y1auqqqx0itqqfp'>
+            <column caption='Revenue ($)' datatype='integer' name='[Faturamento R$]' role='measure' type='quantitative' />
+            <column-instance column='[Faturamento R$]' derivation='Sum' name='[sum:Faturamento R$:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Faturamento R$:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Faturamento R$:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='15'>&lt;</run>
+                <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='15'>[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Faturamento R$:qk]</run>
+                <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D22447BC-FCBA-4D5F-90E9-58DC2E995122}' />
+    </worksheet>
+    <worksheet name='KPI - Shelf Share'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' fontname='Arial'>SOS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dados_Trade' name='federated.1p420u1102w89y1auqqqx0itqqfp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1p420u1102w89y1auqqqx0itqqfp'>
+            <column caption='Our Brand' datatype='real' name='[Share Nossa Marca]' role='measure' type='quantitative' />
+            <column-instance column='[Share Nossa Marca]' derivation='Avg' name='[avg:Share Nossa Marca:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[avg:Share Nossa Marca:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1p420u1102w89y1auqqqx0itqqfp].[avg:Share Nossa Marca:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='15'>&lt;</run>
+                <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='15'>[federated.1p420u1102w89y1auqqqx0itqqfp].[avg:Share Nossa Marca:qk]</run>
+                <run bold='true' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F947B5D2-60BB-4DA9-9880-E1157690ABB6}' />
+    </worksheet>
+    <worksheet name='Out-of-Stock Rate per Store'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Arial'>Out-of-Stock Incidents by Store</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dados_Trade' name='federated.1p420u1102w89y1auqqqx0itqqfp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1p420u1102w89y1auqqqx0itqqfp'>
+            <column datatype='integer' name='[Houve Ruptura Auditoria]' role='measure' type='quantitative' />
+            <column caption='Store' datatype='string' name='[Loja]' role='dimension' type='nominal' />
+            <column-instance column='[Loja]' derivation='None' name='[none:Loja:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Houve Ruptura Auditoria]' derivation='Sum' name='[sum:Houve Ruptura Auditoria:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1p420u1102w89y1auqqqx0itqqfp].[none:Loja:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Houve Ruptura Auditoria:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Houve Ruptura Auditoria:qk]' scope='cols' value='OOS Incidents' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[none:Loja:nk]' value='bold' />
+            <format attr='color' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[none:Loja:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Houve Ruptura Auditoria:qk]' value='Audit Breach Occurred'>
+              <formatted-text>
+                <run bold='true' fontname='Arial'>Audit Breach Occurred</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Houve Ruptura Auditoria:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1p420u1102w89y1auqqqx0itqqfp].[none:Loja:nk]</rows>
+        <cols>[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Houve Ruptura Auditoria:qk]</cols>
+      </table>
+      <simple-id uuid='{EF8C6C95-630F-4946-926D-C914A08FA35D}' />
+    </worksheet>
+    <worksheet name='Revenue vs. Investment Evolution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Arial'>Revenue vs. Investment Evolution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dados_Trade' name='federated.1p420u1102w89y1auqqqx0itqqfp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1p420u1102w89y1auqqqx0itqqfp'>
+            <column caption='Date' datatype='date' name='[Data]' role='dimension' type='ordinal' />
+            <column caption='Revenue ($)' datatype='integer' name='[Faturamento R$]' role='measure' type='quantitative' />
+            <column caption='Investiment ($)' datatype='integer' name='[Investimento R$]' role='measure' type='quantitative' />
+            <column-instance column='[Data]' derivation='Month' name='[mn:Data:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Faturamento R$]' derivation='Sum' name='[sum:Faturamento R$:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Investimento R$]' derivation='Sum' name='[sum:Investimento R$:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Investimento R$:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Faturamento R$:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Faturamento R$:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Faturamento R$:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Investimento R$:qk]' value='bold' />
+            <format attr='font-weight' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[mn:Data:ok]' value='bold' />
+            <format attr='color' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[mn:Data:ok]' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#f2f2f200' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]' value='Measure Names'>
+              <formatted-text>
+                <run bold='true' fontname='Arial'>Measure Names</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Investimento R$:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Faturamento R$:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Investimento R$:qk] + [federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Faturamento R$:qk])</rows>
+        <cols>[federated.1p420u1102w89y1auqqqx0itqqfp].[mn:Data:ok]</cols>
+      </table>
+      <simple-id uuid='{1E30D192-4D6D-4602-9753-53A791A5AB85}' />
+    </worksheet>
+    <worksheet name='Share of Shelf'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Arial'>Share of Shelf by Store</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dados_Trade' name='federated.1p420u1102w89y1auqqqx0itqqfp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1p420u1102w89y1auqqqx0itqqfp'>
+            <column caption='Store' datatype='string' name='[Loja]' role='dimension' type='nominal' />
+            <column caption='Competitor A' datatype='real' name='[Share Concorrente A]' role='measure' type='quantitative' />
+            <column caption='Competitor B' datatype='real' name='[Share Concorrente B]' role='measure' type='quantitative' />
+            <column caption='Our Brand' datatype='real' name='[Share Nossa Marca]' role='measure' type='quantitative' />
+            <column-instance column='[Share Concorrente A]' derivation='Avg' name='[avg:Share Concorrente A:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Share Concorrente B]' derivation='Avg' name='[avg:Share Concorrente B:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Share Nossa Marca]' derivation='Avg' name='[avg:Share Nossa Marca:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Loja]' derivation='None' name='[none:Loja:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[avg:Share Concorrente A:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[avg:Share Concorrente B:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1p420u1102w89y1auqqqx0itqqfp].[avg:Share Nossa Marca:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[none:Loja:nk]' value='58' />
+            <format attr='text-format' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[Multiple Values]' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-weight' data-class='subtotal' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[none:Loja:nk]' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[Multiple Values]' value='p0.00%' />
+            <format attr='font-weight' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[Multiple Values]' value='bold' />
+            <format attr='font-weight' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[none:Loja:nk]' value='bold' />
+            <format attr='color' field='[federated.1p420u1102w89y1auqqqx0itqqfp].[none:Loja:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1p420u1102w89y1auqqqx0itqqfp].[Multiple Values]</rows>
+        <cols>[federated.1p420u1102w89y1auqqqx0itqqfp].[none:Loja:nk]</cols>
+      </table>
+      <simple-id uuid='{83938325-03D1-48C2-BB44-59F648A909CC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Trade-Marketing-Execution-Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='39726' id='3' param='vert' type-v2='layout-flow' w='98530' x='735' y='18663'>
+            <zone h='39726' id='6' name='Revenue vs. Investment Evolution' w='98530' x='735' y='18663'>
+              <layout-cache minheight='160' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='17293' id='8' name='KPI - Revenue' w='21600' x='735' y='1370'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='17293' id='9' name='KPI - Investment' w='22794' x='22335' y='1370'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='17293' id='10' name='KPI - OOS Incidents' w='23897' x='45129' y='1370'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='17293' id='11' name='KPI - Shelf Share' w='30239' x='69026' y='1370'>
+            <layout-cache type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='40241' id='12' param='horz' type-v2='layout-flow' w='98530' x='735' y='58389'>
+            <zone fixed-size='540' h='40241' id='13' is-fixed='true' name='Out-of-Stock Rate per Store' w='50367' x='735' y='58389'>
+              <layout-cache minwidth='240' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='40241' id='15' name='Share of Shelf' w='48160' x='51102' y='58389'>
+              <layout-cache cell-count-w='5' non-cell-size-w='81' type-h='fixed' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97260' id='16' param='vert' type-v2='layout-flow' w='98530' x='735' y='1370'>
+                <zone fixed-size='128' h='17293' id='8' is-fixed='true' name='KPI - Revenue' w='21600' x='735' y='1370'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='128' h='17293' id='9' is-fixed='true' name='KPI - Investment' w='22794' x='22335' y='1370'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='128' h='17293' id='10' is-fixed='true' name='KPI - OOS Incidents' w='23897' x='45129' y='1370'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='128' h='17293' id='11' is-fixed='true' name='KPI - Shelf Share' w='30239' x='69026' y='1370'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39726' id='6' is-fixed='true' name='Revenue vs. Investment Evolution' w='98530' x='735' y='18663'>
+                  <layout-cache minheight='160' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40241' id='13' is-fixed='true' name='Out-of-Stock Rate per Store' w='50367' x='735' y='58389'>
+                  <layout-cache minwidth='240' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40241' id='15' is-fixed='true' name='Share of Shelf' w='48160' x='51102' y='58389'>
+                  <layout-cache cell-count-w='5' non-cell-size-w='81' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8E1CD935-6D27-40A1-9837-CD7D16860385}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Trade-Marketing-Execution-Dashboard'>
+      <viewpoints>
+        <viewpoint name='KPI - Investment' />
+        <viewpoint name='KPI - OOS Incidents' />
+        <viewpoint name='KPI - Revenue' />
+        <viewpoint name='KPI - Shelf Share' />
+        <viewpoint name='Out-of-Stock Rate per Store' />
+        <viewpoint name='Revenue vs. Investment Evolution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Share of Shelf'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{48EA2B67-F23F-439C-B2D9-4B04E3D8718C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='KPI - Investment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B4776622-0C48-4F56-918A-C0259A2CFE17}' />
+    </window>
+    <window class='worksheet' hidden='true' name='KPI - OOS Incidents'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Houve Ruptura Auditoria:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>427</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{63F0EEBD-610E-4BD5-88EA-ED40BAD417EB}' />
+    </window>
+    <window class='worksheet' hidden='true' name='KPI - Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{72DB359E-9D4B-4E14-B16C-B34AAA921D49}' />
+    </window>
+    <window class='worksheet' hidden='true' name='KPI - Shelf Share'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8222578D-1CAB-4C51-A76F-5AFDB560BA3D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Out-of-Stock Rate per Store'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1p420u1102w89y1auqqqx0itqqfp].[sum:Houve Ruptura Auditoria:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1p420u1102w89y1auqqqx0itqqfp].[none:Loja:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{80A11D59-E49D-45ED-B14F-BBF0B2E0982B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Revenue vs. Investment Evolution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]</field>
+            <field>[federated.1p420u1102w89y1auqqqx0itqqfp].[mn:Data:ok]</field>
+            <field>[federated.1p420u1102w89y1auqqqx0itqqfp].[yr:Data:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{770F7491-A6A2-4216-AF3D-64DC3879B6C8}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Share of Shelf'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1p420u1102w89y1auqqqx0itqqfp].[:Measure Names]</field>
+            <field>[federated.1p420u1102w89y1auqqqx0itqqfp].[none:Loja:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EFF946CA-E32C-4C30-AF4A-9FA7C5C3B1F8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Trade-Marketing-Execution-Dashboard' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
