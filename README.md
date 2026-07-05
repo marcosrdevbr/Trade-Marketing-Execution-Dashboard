@@ -146,6 +146,14 @@ Through this project, I improved my skills in:
 
 ---
 
+## 🔗 Live Dashboard
+
+View the interactive Tableau dashboard:
+
+[Trade Marketing Execution Dashboard](https://public.tableau.com/app/profile/marcos.rogerio5761/viz/Trade-Marketing-Execution-Dashboard/Trade-Marketing-Execution-Dashboard)
+
+---
+
 # 👨‍💻 Author
 
 **Marcos Rogério da Silva**
@@ -156,7 +164,6 @@ Trade Marketing | Business Intelligence | Data Analytics
 
 - GitHub: https://github.com/marcosrdevbr
 - LinkedIn: https://www.linkedin.com/in/marcos-rogerio-017923302/
-- Tableau: https://public.tableau.com/app/profile/marcos.rogerio5761/vizzes
 
 Feel free to connect or share feedback about this project.
 
