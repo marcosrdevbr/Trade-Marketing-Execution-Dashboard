@@ -90,6 +90,7 @@ Provides a quick overview of the most important business metrics.
 
 ## 📂 Repository Structure
 
+```text
 Trade-Marketing-Execution-Dashboard
 │
 ├── Dashboard
