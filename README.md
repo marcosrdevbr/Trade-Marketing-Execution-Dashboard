@@ -103,6 +103,7 @@ Trade-Marketing-Execution-Dashboard
 │   └── dashboard-preview.png
 │
 └── README.md
+```
 
 ---
 
