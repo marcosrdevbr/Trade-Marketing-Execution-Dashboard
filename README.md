@@ -154,7 +154,7 @@ View the interactive Tableau dashboard:
 
 ---
 
-# 👨‍💻 Author
+## 👨🏾‍💻 Author
 
 **Marcos Rogério da Silva**
 
